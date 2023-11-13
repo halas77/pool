@@ -1,40 +1,52 @@
-"use client";
-
 import Image from "next/image";
-import CustomButton from "./CustomButton";
+import React from "react";
+
+const project = [
+  {
+    img: "/fast.png",
+    title: "Faster Pick-up",
+    desc: "We have your contract already prepared.",
+  },
+  {
+    img: "/secure.png",
+    title: "Secured and Safe",
+    desc: "Find the safest and finest ride.",
+  },
+  {
+    img: "/better.png",
+    title: "Better Service",
+    desc: "We know you better, we serve you better.",
+  },
+];
 
 const Hero = () => {
-  const handleScroll = () => {};
-
   return (
-    <div className="hero">
-      <div className="flex-1 pt-36 padding-x">
-        <h1 className="hero__title text-white">
-          Effortlessly locate, reserve, or hire a vehicle in no time!
-        </h1>
-        <p className="hero__subtitle">
-          Simplify your vehicle rental journey through our user-friendly booking
-          procedure.
-        </p>
-
-        <CustomButton
-          title="Discover Cars"
-          containerStyles="bg-primary-blue text-white rounded-full mt-10"
-          handleClick={handleScroll}
-        />
+    <section>
+      <div className="w-full h-[600px] bg-gray-100 custom-bg">
       </div>
-
-      <div className="hero__image-container">
-        <div className="hero__image">
-          <Image
-            src="/hero4.png"
-            alt="hero image"
-            fill
-            className="object-contain "
-          />
-        </div>
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3 m-3 mt-[-60px] bg-blue-100 rounded-lg">
+        {project.map((item) => (
+          <div
+            key={item.title}
+            className="px-4 p-1 flex mx-auto text-center items-center rounded"
+          >
+            <Image
+              src={item.img}
+              width={110}
+              height={0}
+              alt="Image"
+              className="mx-auto rounded-xl border border-gray-300 p-2"
+            />
+            <div className="p-3">
+              <h2 className="font-bold text-slate-900 text-2xl py-3">
+                {item.title}
+              </h2>
+              <p className="text-gray-600 font-sans md:pb-10">{item.desc}</p>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 };
 
