@@ -22,20 +22,20 @@ const project = [
 const Hero = () => {
   return (
     <section>
-      <div className="w-full h-[600px] bg-gray-100 custom-bg">
+      <div className="w-full h-[400px] md:h-[600px] custom-bg">
       </div>
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3 m-3 mt-[-60px] bg-blue-100 rounded-lg">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3 m-3 md:mt-[-60px] mt-[-100px]  bg-blue-200 rounded-lg">
         {project.map((item) => (
           <div
             key={item.title}
-            className="px-4 p-1 flex mx-auto text-center items-center rounded"
-          >
+            className="px-4 p-1 flex md:mx-auto text-center items-center rounded"
+          >  
             <Image
               src={item.img}
               width={110}
               height={0}
               alt="Image"
-              className="mx-auto rounded-xl border border-gray-300 p-2"
+              className="mx-ato rounded-xl border border-gray-400 p-4"
             />
             <div className="p-3">
               <h2 className="font-bold text-slate-900 text-2xl py-3">
