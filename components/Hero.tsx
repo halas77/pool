@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Help from "./Help";
 
 const project = [
   {
@@ -24,7 +25,7 @@ const Hero = () => {
     <section>
       <div className="w-full h-[400px] md:h-[600px] custom-bg">
       </div>
-      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3 m-3 md:mt-[-60px] mt-[-100px]  bg-blue-200 rounded-lg">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3 m-5 md:mt-[-60px] mt-[-100px]  bg-blue-200 rounded-t-lg">
         {project.map((item) => (
           <div
             key={item.title}
@@ -46,6 +47,7 @@ const Hero = () => {
           </div>
         ))}
       </div>
+      <Help/>
     </section>
   );
 };

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
+import { FaLinkedin, FaLinkedinIn } from "react-icons/fa";
 import { HiBars3 } from "react-icons/hi2";
 import { GrClose } from "react-icons/gr";
 import { BiChevronRight } from "react-icons/bi";
@@ -18,7 +19,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <header className="w-full py-2 md:px-8 px-4 bg-sky-900">
+      <header className="top-0 left-0 w-full py-2 lg:py-4 md:px-8 px-4 bg-sky-950 fixed z-[9999]">
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
             {/* Logo  */}
@@ -34,15 +35,15 @@ const Navbar = () => {
                 {nav_links.map((item, index) => (
                   <li key={item.key}>
                     <Link
-                        href={item.href}
-                        className={
-                          pathname === item.href
-                            ? "text-gray-50 border-b-2 border-slate-100 pb-1 font-bold"
-                            : "text-gray-100 hover:text-gray-50 hover:border-b hover:border-slate-100 pb-1 ease-in-out duration-105"
-                        }
-                      >
-                        {item.label}
-                      </Link>
+                      href={item.href}
+                      className={
+                        pathname === item.href
+                          ? "text-gray-50 border-b-2 border-slate-100 pb-1 font-bold"
+                          : "text-gray-100 hover:text-gray-50 hover:border-b hover:border-slate-100 pb-1 ease-in-out duration-105"
+                      }
+                    >
+                      {item.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -50,12 +51,7 @@ const Navbar = () => {
             {/* CTA  */}
             <div className="xl:pr-20">
               <Link href="/">
-                <Image
-                  src="/pool_call.png"
-                  width={90}
-                  height={20}
-                  alt="Logo"
-                />
+                <Image src="/pool_call.png" width={90} height={20} alt="Logo" />
               </Link>
             </div>
             <div className="lg:hidden">
@@ -134,6 +130,42 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="hidden lg:flex fixed flex-col top-[25%] left-0">
+        <ul>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-110px] p-2 hover:ml-[0px] duration-300 bg-blue-600">
+            <a
+              className="flex justify-between items-center w-full text-gray-300 font-bold"
+              href="/"
+            >
+              Facebook <FaFacebook size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-110px] p-2 hover:ml-[0px] duration-300 bg-black">
+            <a
+              className="flex justify-between items-center w-full text-gray-300 font-bold"
+              href="/"
+            >
+              Instagram <FaInstagram size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-110px] p-2 hover:ml-[0px] duration-300 bg-sky-600">
+            <a
+              className="flex justify-between items-center w-full text-gray-300 font-bold"
+              href="/"
+            >
+              Telegram <FaTelegram size={30} />
+            </a>
+          </li>
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-110px] p-2 hover:ml-[0px] duration-300 bg-black">
+            <a
+              className="flex justify-between items-center w-full text-gray-300 font-bold"
+              href="/"
+            >
+              Tiktok <FaTiktok size={30} />
+            </a>
+          </li>
+        </ul>
       </div>
     </>
   );

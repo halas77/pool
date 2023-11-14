@@ -43,7 +43,7 @@ const Service = () => {
           {projectContent.map((item, index) => (
             <div
               key={item.title}
-              className="shadow-md bg-white p-5 pb-5 flex flex-col mx-auto text-center rounded-md ease-in-out duration-300 lg:w-[450px] lg:h-[500px]"
+              className="shadow-md bg-gray-100 p-5 pb-5 flex flex-col mx-auto text-center rounded-md ease-in-out duration-300 lg:w-[450px] lg:h-[500px]"
             >
               <Image
                 src={item.img}
@@ -87,8 +87,8 @@ const Service = () => {
                   className="bg-sky-900 hover:bg-sky-700 text-white font-sans font-semibold duration-300 transition-all ease-in-out py-2 max-md:mt-4 px-5 flex border rounded-full space-x-3 items-center hover:border-gray-500 border-gray-300"
                 >
                   Book now
-                  <span className="text-gray-50 text-2xl pl-2">|</span>
-                  <span className="bg-sky-50 rounded-full w-8 h-8 flex items-center justify-center">
+                  <span className="text-gray-50 text-xl pl-2">|</span>
+                  <span className="bg-sky-50 rounded-full w-5 h-5 flex items-center justify-center">
                     <BiChevronRight className="w-6 h-6 text-sky-950" />
                   </span>
                 </Link>

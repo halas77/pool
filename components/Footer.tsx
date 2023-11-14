@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram, FaTelegram, FaTiktok } from "react-icons/fa";
 const Footer = () => {
   return (
     <div>
-      <div className="bg-zinc-950 w-full mx-auto py-4 px-6 lg:px-16 grid lg:grid-cols-3 gap-4 text-gray-500">
+      <div className="bg-[#000300] w-full mx-auto py-4 px-6 lg:px-16 grid lg:grid-cols-3 gap-4 text-gray-500">
         <div>
           <div className="flex">
             <Link href="/">
@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-zinc-950 w-full flex justify-center items-center mx-auto pb-2">
+      <div className="bg-[#000300] w-full flex justify-center items-center mx-auto pb-2">
         <p className="text-gray-400 mx-auto">
           Pool IT Solution | All rights reserved &copy;
         </p>
