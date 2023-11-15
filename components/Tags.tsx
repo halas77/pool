@@ -53,7 +53,7 @@ const services = {
 
 const Services = () => {
   return (
-    <section className="py-8 bg-[#243238]">
+    <section className="py-6 bg-[#243238]">
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-white text-2xl lg:text-4xl font-bold mb-3">

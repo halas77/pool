@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 .custom-bg{
-  background-image: url('/bg222.jpg');
-  background-repeat: no-repeat;
+  background-image: url('/map-final.jpg');
   background-size: cover;
 }

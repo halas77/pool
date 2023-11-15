@@ -7,7 +7,7 @@ import Form from "@components/Form";
 
 const Contact = () => {
   return (
-    <div className="w-full text-black bg-white">
+    <div className="w-full bg-white pt-5 lg:pt-24">
       <div className="mx-4 md:mx:24 lg:mx-32 my-12">
         <h1 className="font font-extrabold text-3xl font-sans mb-10">
           CONTACT{" "}
