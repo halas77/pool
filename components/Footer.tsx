@@ -8,9 +8,15 @@ const Footer = () => {
     <div>
       <div className="bg-[#000300] w-full mx-auto py-4 px-6 lg:px-16 grid lg:grid-cols-3 gap-4 text-gray-500">
         <div>
-          <div className="flex">
-            <Link href="/">
+          <div className="flex gap-3">
+            <Link href="/" className="mr-3">
               <Image src="/Pool_logo.png" width={60} height={20} alt="Logo" />
+            </Link>
+            <Link href="" className="flex items-center justify-center ">
+              <Image src={"/ios.jpeg"} height={20} width={150} alt="Image"/>
+            </Link>
+            <Link href="" className="flex items-center justify-center">
+              <Image src={"/android1.jpg"} height={20} width={300} alt="Image" className="w-[150px]"/>
             </Link>
           </div>
           <p className="py-4 text-sm font-sans">
