@@ -9,8 +9,8 @@ const page = () => {
     <section className="py-28 lg:py-32 bg-sky-700 overflow-x-hidden">
       <div className="container px-4 lg:px-12 mx-auto">
         <div className="lg:flex space-x-2 justify-between">
-          <div className="lg:w-6/12 relative z-10 flex justify-start items-center m-4">
-            <Image src={"/poolhelp.png"} width={600} height={200} alt="Image"/>
+          <div className="hidden lg:w-6/12 relative z-10 lg:flex justify-start items-start m-4">
+            <Image src={"/poolhelp.png"} width={600} height={200} alt="Image" />
           </div>
           <div className="lg:w-6/12 relative z-10">
             <h2 className="text-sky-50 font-sans text-2xl lg:text-4xl font-bold mb-5 border-b-sky-200">
