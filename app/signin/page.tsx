@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 const Page = () => {
   return (
     <div className="flex items-center justify-center w-full h-screen bg-gradient-to-br from-sky-400 to-slate-950">
-      <div className="bg-sky-100 bg-opacity-90 shadow-md rounded-md p-4 p-8 w-full md:w-96 pb-20">
+      <div className="bg-sky-100 bg-opacity-90 shadow-md rounded-md p-8 w-full md:w-96 pb-20 m-3">
         <i className="flex items-center justify-center">
           {" "}
           <FaUserCircle size={35} />{" "}
