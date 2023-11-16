@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <div className="bg-sky-700 w-full py-20 flex items-center justify-center">
         <div className="container px-4 lg:pl-10 mx-auto">
-          <div className="lg:flex justify-between items-center max-lg:mt-28">
+          <div className="lg:flex justify-between items-center max-lg:mt-24">
             <div className="lg:w-5/12 mb-6 lg:mb-0 lg:pt-6 xl:px-8 lg:ml-14">
               <span className="inline-block py-1 pr-5 font-sans text-sky-200 font-semibold relative mb-4 before:left-0 before:top-0">
                 {" "}

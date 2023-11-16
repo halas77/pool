@@ -57,7 +57,7 @@ const Services = () => {
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-heading text-2xl lg:text-4xl font-bold mb-3">
-            Why You {" "}
+            Why You{" "}
             <span className="border-b-2 font-sans border-sky-700 pr-10">
               Choose Us
             </span>

@@ -8,7 +8,13 @@ import React, { useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
 import { GrClose } from "react-icons/gr";
 import { BiChevronRight } from "react-icons/bi";
-import { FaFacebook, FaInstagram, FaTelegram, FaTiktok} from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTelegram,
+  FaTiktok,
+  FaArrowRight,
+} from "react-icons/fa";
 import Chat from "./Chat";
 
 const Navbar = () => {
@@ -84,7 +90,7 @@ const Navbar = () => {
         <div className="bg-gray-100 w-[60%] top-0 left-0 z-[9999] h-screen fixed duration-300 ease-in-out">
           <div className="h-14 px-10 border-b flex items-center">
             <button className="flex items-center space-x-3" onClick={navHandle}>
-              <GrClose size={20}/>
+              <GrClose size={20} />
               <span className="text-lg font-bold">Close</span>
             </button>
           </div>
@@ -97,9 +103,11 @@ const Navbar = () => {
                     href={item.href}
                     className="group text-lg text-semibold flex items-center p-2 duration-300 transition-all ease-in-out hover:text-primary"
                   >
-                    <span className="pr-3 font-semibold text-gray-900">{item.label}</span>
-                    <span className="left-0 relative duration-300 transition-all ease-in-out opacity-100 text-gray-700">
-                      <BiChevronRight className="text-lg"/>
+                    <span className="font-semibold text-gray-900 pr-3 ">
+                      {item.label}
+                    </span>
+                    <span className="left-0 relative duration-300 transition-all ease-in-out opacity-100">
+                      <BiChevronRight size={15} className="text-gray-500" />
                     </span>
                   </Link>
                 </li>
@@ -172,8 +180,8 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      
-          <Chat />
+
+      <Chat />
     </>
   );
 };
