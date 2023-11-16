@@ -28,19 +28,19 @@ const Hero = () => {
               <div className="flex max-md:flex-col md:space-x-3 text-center ">
                 <Link
                   href="/"
-                  className="text-[16px] max-md:my-3 py-4 px-14 border-2 border-sky-50 text-gray-50 max-md:text-lg font-bold font-sans rounded-full duration-300 transition-all ease-in-out hover:bg-sky-600 hover:shadow-lg inline-block relative top-0 hover:-top-1"
+                  className="text-[16px] max-lg:my-3 py-3 px-10 border-2 border-sky-50 text-gray-50 max-md:text-lg font-bold font-sans rounded-full duration-300 transition-all ease-in-out hover:bg-sky-600 hover:shadow-lg inline-block relative top-0 hover:-top-1"
                 >
                   Contact Us
                 </Link>
                 <Link
                   href="/"
-                  className="text-[16px] max-md:mb-3 py-4 px-14 max-md:text-lg bg-sky-200 text-slate-900 font-bold font-sans rounded-full duration-300 transition-all ease-in-out hover:bg-sky-100 border hover:border-sky-200 hover:shadow-lg inline-block relative top-0 hover:-top-1"
+                  className="text-[16px] max-md:mb-3 py-3 px-10 max-md:text-lg bg-sky-200 text-slate-900 font-bold font-sans rounded-full duration-300 transition-all ease-in-out hover:bg-sky-100 border hover:border-sky-200 hover:shadow-lg inline-block relative top-0 hover:-top-1"
                 >
                   Download App
                 </Link>
               </div>
             </div>
-            <div className="lg:w-5/12 flex">
+            <div className="lg:w-5/12 flex max-md:justify-center">
               <Image
                 src="/phone01.png"
                 width={300}
