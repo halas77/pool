@@ -3,6 +3,7 @@
 import { nav_links } from "@constants";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from 'framer-motion';
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
@@ -25,7 +26,12 @@ const Navbar = () => {
   };
   return (
     <>
-      <header className="top-0 left-0 w-full py-2 lg:py-3 md:px-8 px-4 bg-sky-700 fixed z-[9999]">
+      <motion.header
+        className="top-0 left-0 w-full py-2 lg:py-3 md:px-8 px-4 bg-sky-700 fixed z-[9999]"
+        initial={{ y: -50, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
         <div className="container mx-auto">
           <div className="flex justify-between items-center">
             {/* Logo  */}
@@ -72,16 +78,19 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </header>
+      </motion.header>
 
       {/* for mobile oreintation  */}
 
-      <div
+      <motion.div
         className={
           nav
             ? "py-0 block fixed w-screen z-[9999]"
             : "py-0 hidden fixed w-screen z-[9999]"
         }
+        initial={{ x: '-100vw' }}
+        animate={{ x: nav ? 0 : '-50vw' }}
+        transition={{ duration: 0.5 }}
       >
         <div
           className="h-screen w-screen z-[9999] top-0 fiex bg-black bg-opacity-50"
@@ -143,8 +152,13 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0 z-[9999]">
+      </motion.div>
+      <motion.div
+        className="hidden lg:flex fixed flex-col top-[35%] left-0 z-[9999]"
+        initial={{ x: '-50px', opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-110px] p-2 hover:ml-[0px] duration-300 bg-sky-700">
             <a
@@ -179,7 +193,7 @@ const Navbar = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </motion.div>
 
       <Chat />
     </>
