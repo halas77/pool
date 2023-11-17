@@ -43,7 +43,7 @@ const Service = () => {
           {projectContent.map((item, index) => (
             <div
               key={item.title}
-              className="shadow-md bg-gray-100 p-5 pb-5 flex flex-col mx-auto text-center rounded-md ease-in-out duration-300 lg:w-[450px] lg:h-[500px]"
+              className="shadow-md bg-gray-100 p-5 pb-5 flex flex-col mx-auto text-center rounded-md ease-in-out duration-300 2xl:w-[450px] lg:h-[500px]"
             >
               <Image
                 src={item.img}

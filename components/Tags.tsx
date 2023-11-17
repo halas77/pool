@@ -63,7 +63,7 @@ const Services = () => {
             </p>
           )}
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:p-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:p-8">
           {services.items.map((item, index) => (
             <div className="flex space-x-10" key={item.title}>
               <div className="w-14 shrink-0">

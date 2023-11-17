@@ -3,7 +3,7 @@
 import { nav_links } from "@constants";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
@@ -44,20 +44,55 @@ const Navbar = () => {
 
             <div className="hidden lg:block">
               <ul className="flex space-x-12 font-sans">
-                {nav_links.map((item, index) => (
-                  <li key={item.key}>
-                    <Link
-                      href={item.href}
-                      className={
-                        pathname === item.href
-                          ? "text-gray-50 border-b-2 border-slate-100 pb-1 font-extrabold"
-                          : "text-gray-100 font-semibold hover:text-gray-50 hover:border-b hover:border-slate-100 pb-1 ease-in-out duration-105"
-                      }
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
+                <li>
+                  <Link
+                    href="/"
+                    className={
+                      pathname === "/"
+                        ? "text-gray-50 border-b-2 border-slate-100 pb-1 font-extrabold"
+                        : "text-gray-100 font-semibold hover:text-gray-50 hover:border-b hover:border-slate-100 pb-1 ease-in-out duration-105"
+                    }
+                  >
+                    Home
+                  </Link>
+                </li>
+                <div className="relative ml-4 group text-gray-200 font-semibold">
+                  <button className="text-white focus:outline-none pb-2">
+                    Services
+                  </button>
+                  <div className="absolute hidden bg-white py-3 px-3 rounded-md shadow-lg group-hover:flex flex-col ease-in-out duration-300">
+                    <a href="#" className="py-2 px-2 rounded text-gray-800 border-b hover:text-sky-100 hover:bg-sky-700">
+                      SignIn
+                    </a>
+                    <a href="#" className="py-2 px-2 rounded text-gray-800 hover:text-sky-100 hover:bg-sky-700">
+                      SignUp
+                    </a>
+                  </div>
+                </div>
+                <li>
+                  <Link
+                    href="/about"
+                    className={
+                      pathname === "/about"
+                        ? "text-gray-50 border-b-2 border-slate-100 pb-1 font-extrabold"
+                        : "text-gray-100 font-semibold hover:text-gray-50 hover:border-b hover:border-slate-100 pb-1 ease-in-out duration-105"
+                    }
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/conatct"
+                    className={
+                      pathname === "/conatct"
+                        ? "text-gray-50 border-b-2 border-slate-100 pb-1 font-extrabold"
+                        : "text-gray-100 font-semibold hover:text-gray-50 hover:border-b hover:border-slate-100 pb-1 ease-in-out duration-105"
+                    }
+                  >
+                    Contact us
+                  </Link>
+                </li>
               </ul>
             </div>
             {/* CTA  */}
@@ -88,8 +123,8 @@ const Navbar = () => {
             ? "py-0 block fixed w-screen z-[9999]"
             : "py-0 hidden fixed w-screen z-[9999]"
         }
-        initial={{ x: '-100vw' }}
-        animate={{ x: nav ? 0 : '-50vw' }}
+        initial={{ x: "-100vw" }}
+        animate={{ x: nav ? 0 : "-50vw" }}
         transition={{ duration: 0.5 }}
       >
         <div
@@ -155,7 +190,7 @@ const Navbar = () => {
       </motion.div>
       <motion.div
         className="hidden lg:flex fixed flex-col top-[35%] left-0 z-[9999]"
-        initial={{ x: '-50px', opacity: 0 }}
+        initial={{ x: "-50px", opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.4 }}
       >
