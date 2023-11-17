@@ -1,3 +1,5 @@
+"use client"
+
 import { RiUserFill, RiLockPasswordFill } from "react-icons/ri";
 import { FaUserCircle } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
