@@ -48,17 +48,17 @@ const services = {
 
 const Services = () => {
   return (
-    <section className="py-8 bg-[#243238]">
+    <section className="py-8 bg-blue-100">
       <div className="container px-4 mx-auto">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-white text-2xl lg:text-4xl font-bold mb-3">
-            Why You{" "}
-            <span className="border-b-2 font-sans border-sky-100 pr-10">
-              Choose Us
+          <h2 className="text-slate-950 text-2xl lg:text-4xl font-bold mb-3">
+            Why You {" "}
+            <span className="border-b-2 font-sans border-sky-700 pr-10">
+            Should Choose Us?
             </span>
           </h2>
           {services.heading.heading && (
-            <p className="text-sky-100 leading-relaxed mb-7 text-md font-sans">
+            <p className="text-gray-700 leading-relaxed mb-2 text-md font-sans">
               {services.heading.desc}
             </p>
           )}
@@ -67,18 +67,18 @@ const Services = () => {
           {services.items.map((item, index) => (
             <div className="flex space-x-10" key={item.title}>
               <div className="w-14 shrink-0">
-                <span className="inline-flex items-center justify-center w-[70px] h-[70px] rounded-2xl bg-sky-100">
+                <span className="inline-flex items-center justify-center w-[70px] h-[70px] rounded-2xl bg-gray-100 border border-gray-300">
                   <Image src={item.icons} width={50} height={50} alt="Image" />
                 </span>
               </div>
               <div>
                 {item.title && (
-                  <h3 className="text-sky-200 font-bold text-lg mb-3">
+                  <h3 className="text-slate-800 font-bold text-lg mb-3">
                     {item.title}
                   </h3>
                 )}
                 {item.desc && (
-                  <p className="leading-relaxed text-gray-300 text-sm font-sans">
+                  <p className="leading-relaxed text-gray-700 text-sm font-sans">
                     {item.desc}
                   </p>
                 )}
@@ -86,15 +86,15 @@ const Services = () => {
             </div>
           ))}
         </div>
-        <div className="mx-auto flex items-center justify-center max-md:mt-10">
+        <div className="mx-auto flex items-center justify-center max-md:mt-6">
           <Link
-            href="/"
-            className="text-sky-200 font-sans font-semibold duration-300 transition-all ease-in-out py-3 px-6 flex border border-gray-400 rounded-full space-x-3 items-center hover:border-gray-200"
+            href="/services"
+            className="font-sans font-semibold duration-300 transition-all ease-in-out py-3 px-6 flex border border-gray-400 rounded-full space-x-3 items-center hover:border-gray-600"
           >
             More about us
-            <span className="text-gray-200 text-xl pl-2">|</span>
-            <span className="bg-sky-50 rounded-full w-6 h-6 flex items-center justify-center">
-              <BiChevronRight className="w-6 h-6 text-slate-900" />
+            <span className="text-gray-600 text-2xl pl-2">|</span>
+            <span className="bg-slate-950 rounded-full w-8 h-8 flex items-center justify-center">
+              <BiChevronRight className="w-6 h-6 text-white" />
             </span>
           </Link>
         </div>
