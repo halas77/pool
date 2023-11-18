@@ -15,8 +15,8 @@ const TranslateComponent = () => {
             pageLanguage: "en",
             includedLanguages: "en,es,fr,am",
             layout:
-              window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false,
+              window.google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+            autoDisplay: true,
           },
           "google_translate_element"
         );
@@ -27,10 +27,10 @@ const TranslateComponent = () => {
       googleTranslateElementInit();
     }
   }, []);
+
   return (
     <div
       id="google_translate_element"
-      className="skiptranslate"
     ></div>
   );
 };

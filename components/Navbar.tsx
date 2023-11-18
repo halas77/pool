@@ -112,8 +112,8 @@ const Navbar = () => {
                 <HiBars3 size={35} className="text-white" />
               </button>
             </div>
-            <div className="hidden lg:flex">
-              <Test />
+            <div className="hidden lg:flex cla">
+                <Test />
             </div>
           </div>
         </div>
