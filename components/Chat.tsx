@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { MdSupportAgent } from "react-icons/md";
 import { FaTimes } from "react-icons/fa";
+import { IoMdSend } from "react-icons/io";
 
 const Chat = () => {
   const [chat, setChat] = useState(false);
@@ -19,16 +20,22 @@ const Chat = () => {
           }
         >
           <div className="bg-sky-950 justify-start px-4 py-3 rounded-t-lg">
-            <p className="text-lg font-sans font-bold text-white">
-                Live Chat
-            </p>
+            <p className="text-lg font-sans font-bold text-white">Live Chat</p>
           </div>
           <div className="flex flex-col justify-end items-start w-full h-full mt-[-52px]">
-            <input
-              type="text"
-              className="w-full py-3 px-5 bg-gray-300 outline-none"
-              placeholder="Type here"
-            />
+            <div className="w-full flex bg-gray-300 justify-between items-center pr-4">
+              <input
+                type="text"
+                className="w-full py-3 px-5 bg-gray-300 outline-none"
+                placeholder="type here ..."
+              />
+              <button>
+                <IoMdSend
+                  size={35}
+                  className="border bg-slate-900 text-sky-200 p-1 rounded"
+                />
+              </button>
+            </div>
           </div>
         </div>
         <button

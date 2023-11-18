@@ -16,6 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="stylesheet" href="/globals.css" />
+        <script
+          type="text/javascript"
+          src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        ></script>
       </head>
       <body className="">
         <Navbar />

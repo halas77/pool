@@ -9,13 +9,9 @@ import React, { useState } from "react";
 import { HiBars3 } from "react-icons/hi2";
 import { GrClose } from "react-icons/gr";
 import { BiChevronRight } from "react-icons/bi";
-import {
-  FaFacebook,
-  FaInstagram,
-  FaTelegram,
-  FaTiktok,
-} from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTelegram, FaTiktok } from "react-icons/fa";
 import Chat from "./Chat";
+import Test from "./Test";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -60,10 +56,16 @@ const Navbar = () => {
                     Services
                   </button>
                   <div className="absolute hidden bg-white py-3 px-3 rounded-md shadow-lg group-hover:flex flex-col ease-in-out duration-300">
-                    <a href="/signin" className="py-2 px-2 rounded text-gray-800 border-b hover:text-sky-100 hover:bg-sky-700">
+                    <a
+                      href="/signin"
+                      className="py-2 px-2 rounded text-gray-800 border-b hover:text-sky-100 hover:bg-sky-700"
+                    >
                       SignIn
                     </a>
-                    <a href="#" className="py-2 px-2 rounded text-gray-800 hover:text-sky-100 hover:bg-sky-700">
+                    <a
+                      href="#"
+                      className="py-2 px-2 rounded text-gray-800 hover:text-sky-100 hover:bg-sky-700"
+                    >
                       SignUp
                     </a>
                   </div>
@@ -77,7 +79,7 @@ const Navbar = () => {
                         : "text-gray-100 font-semibold hover:text-gray-50 hover:border-b hover:border-slate-100 pb-1 ease-in-out duration-105"
                     }
                   >
-                    About Us
+                    About us
                   </Link>
                 </li>
                 <li>
@@ -109,6 +111,9 @@ const Navbar = () => {
               <button className="block lg:hidden" onClick={navHandle}>
                 <HiBars3 size={35} className="text-white" />
               </button>
+            </div>
+            <div className="hidden lg:flex">
+              <Test />
             </div>
           </div>
         </div>
