@@ -14,7 +14,6 @@ import {
   FaInstagram,
   FaTelegram,
   FaTiktok,
-  FaArrowRight,
 } from "react-icons/fa";
 import Chat from "./Chat";
 
@@ -61,7 +60,7 @@ const Navbar = () => {
                     Services
                   </button>
                   <div className="absolute hidden bg-white py-3 px-3 rounded-md shadow-lg group-hover:flex flex-col ease-in-out duration-300">
-                    <a href="#" className="py-2 px-2 rounded text-gray-800 border-b hover:text-sky-100 hover:bg-sky-700">
+                    <a href="/signin" className="py-2 px-2 rounded text-gray-800 border-b hover:text-sky-100 hover:bg-sky-700">
                       SignIn
                     </a>
                     <a href="#" className="py-2 px-2 rounded text-gray-800 hover:text-sky-100 hover:bg-sky-700">
@@ -83,9 +82,9 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link
-                    href="/conatct"
+                    href="/contact"
                     className={
-                      pathname === "/conatct"
+                      pathname === "/contact"
                         ? "text-gray-50 border-b-2 border-slate-100 pb-1 font-extrabold"
                         : "text-gray-100 font-semibold hover:text-gray-50 hover:border-b hover:border-slate-100 pb-1 ease-in-out duration-105"
                     }
