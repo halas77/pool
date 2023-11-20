@@ -87,23 +87,23 @@ const Contact = () => {
                   Social Links
                 </h2>
                 <div className="flex gap-3 ">
-                  <Link href="" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.facebook.com/Poolshare" target="_blank" rel="noopener noreferrer">
                     <div className="text-gray-300 hover:text-gray-50 ease-in-out duration-300">
                       <FaFacebook size={23} />
                     </div>
                   </Link>
-                  <Link href="" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.instagram.com/pooltech9221/" target="_blank" rel="noopener noreferrer">
                     <div className="text-gray-300 hover:text-gray-50 ease-in-out duration-300">
                       <FaInstagram size={23} />
                     </div>
                   </Link>
-                  <Link href="" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://t.me/Pool_ambassador" target="_blank" rel="noopener noreferrer">
                     <div className="text-gray-300 hover:text-gray-50 ease-in-out duration-300">
                       <FaTelegram size={23} />
                     </div>
                   </Link>
 
-                  <Link href="" target="_blank" rel="noopener noreferrer">
+                  <Link href="https://www.tiktok.com/@pool9221" target="_blank" rel="noopener noreferrer">
                     <div className="text-gray-300 hover:text-gray-50 ease-in-out">
                       <FaTiktok size={23} />
                     </div>

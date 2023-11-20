@@ -26,25 +26,25 @@ const Footer = () => {
             laborum nesciunt nam, ducimus placeat magnam vitae,
           </p>
           <div className="flex justify-between md:w-[80%] my-6">
-            <Link href="">
+            <Link href="https://www.facebook.com/Poolshare">
               <FaFacebook
                 size={30}
                 className="text-gray-400 hover:text-gray-300"
               />
             </Link>
-            <Link href="">
+            <Link href="https://www.instagram.com/pooltech9221/">
               <FaInstagram
                 size={30}
                 className="text-gray-400 hover:text-gray-300"
               />
             </Link>
-            <Link href="">
+            <Link href="https://t.me/Pool_ambassador">
               <FaTelegram
                 size={30}
                 className="text-gray-400 hover:text-gray-300"
               />
             </Link>
-            <Link href="">
+            <Link href="https://www.tiktok.com/@pool9221">
               <FaTiktok
                 size={30}
                 className="text-gray-400 hover:text-gray-300"

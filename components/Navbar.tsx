@@ -163,25 +163,25 @@ const Navbar = () => {
             </ul>
             <div>
               <div className="flex mx-auto justify-center items-center my-10 p-4 gap-8">
-                <Link href="">
+                <Link href="https://www.facebook.com/Poolshare">
                   <FaFacebook
                     size={22}
                     className="text-sky-950 hover:text-gray-500"
                   />
                 </Link>
-                <Link href="">
+                <Link href="https://www.tiktok.com/@pool9221">
                   <FaTiktok
                     size={22}
                     className="text-sky-950 hover:text-gray-500"
                   />
                 </Link>{" "}
-                <Link href="">
+                <Link href="https://www.instagram.com/pooltech9221/">
                   <FaInstagram
                     size={22}
                     className="text-sky-950 hover:text-gray-500"
                   />
                 </Link>{" "}
-                <Link href="">
+                <Link href="https://t.me/Pool_ambassador">
                   <FaTelegram
                     size={22}
                     className="text-sky-950 hover:text-gray-500"
@@ -202,7 +202,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-110px] p-2 hover:ml-[0px] duration-300 bg-sky-700">
             <a
               className="flex justify-between items-center w-full text-gray-50 font-bold"
-              href="/"
+              href="https://www.facebook.com/Poolshare"
             >
               Facebook <FaFacebook size={30} />
             </a>
@@ -210,7 +210,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-110px] p-2 hover:ml-[0px] duration-300 bg-black">
             <a
               className="flex justify-between items-center w-full text-gray-50 font-bold"
-              href="/"
+              href="https://www.instagram.com/pooltech9221/"
             >
               Instagram <FaInstagram size={30} />
             </a>
@@ -218,7 +218,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-110px] p-2 hover:ml-[0px] duration-300 bg-sky-500">
             <a
               className="flex justify-between items-center w-full text-gray-50 font-bold"
-              href="/"
+              href="https://t.me/Pool_ambassador"
             >
               Telegram <FaTelegram size={30} />
             </a>
@@ -226,7 +226,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-110px] p-2 hover:ml-[0px] duration-300 bg-black">
             <a
               className="flex justify-between items-center w-full text-gray-50 font-bold"
-              href="/"
+              href="https://www.tiktok.com/@pool9221"
             >
               Tiktok <FaTiktok size={30} />
             </a>
