@@ -22,7 +22,7 @@ const services = {
       desc: "Offering comfortable and well-maintained vehicles",
     },
     {
-      icons: "/Professionalism.png",
+      icons: "/pro.png",
       title: "Professionalism",
       desc: "Polite, knowledgeable, and courteous drivers.",
     },
@@ -39,7 +39,7 @@ const services = {
     },
 
     {
-      icons: "/personalized.png",
+      icons: "/person.png",
       title: "Personalized Experience",
       desc: "Tailoring services to individual preferences.",
     },
