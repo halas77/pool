@@ -15,7 +15,7 @@ const TranslateComponent = () => {
             pageLanguage: "en",
             includedLanguages: "en,es,fr,am",
             layout:
-              window.google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+              window.google.translate.TranslateElement.InlineLayout.VERTICAL,
             autoDisplay: true,
           },
           "google_translate_element"

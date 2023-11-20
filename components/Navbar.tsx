@@ -22,12 +22,12 @@ const Navbar = () => {
   return (
     <>
       <motion.header
-        className="top-0 left-0 w-full py-2 lg:py-3 md:px-8 px-4 bg-sky-700 fixed z-[9999]"
+        className="top-0 left-0 w-full py-2 lg:py-3 md:px-8 px-4 bg-sky-700 fixed z-[9999] shadow-sm"
         initial={{ y: -50, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto ">
           <div className="flex justify-between items-center">
             {/* Logo  */}
             <div className="xl:pl-20">
